@@ -1,0 +1,71 @@
+# The Master MDX Cheat Sheet
+
+Welcome to your MDX guide! You can keep this file in your project forever and use it as a reference when writing new articles. 
+
+## Headings (H2)
+You create headings by using the hash `#` symbol. 
+- One hash `#` is the main title (H1). (You should only use one of these per page, at the very top).
+- Two hashes `##` is a Section Heading (H2).
+- Three hashes `###` is a Sub-section Heading (H3).
+
+### This is an H3 heading!
+See how it is slightly smaller than the H2 above?
+
+## Text Formatting
+Writing standard paragraphs is as easy as just typing. You don't need any special symbols for normal text.
+
+However, you can emphasize text easily:
+- You can make text **bold by wrapping it in two asterisks**.
+- You can make text *italic by wrapping it in one asterisk*.
+- You can format a word to look like `inline code` by wrapping it in backticks.
+- You can strike through text by ~~wrapping it in two tildes~~.
+
+## Links and Images
+Adding links is done using brackets for the text, and parentheses for the URL.
+[Visit my personal website](https://saurabh.dev)
+
+## Lists
+You can create unorganized (bulleted) lists using dashes:
+- First item
+- Second item
+- Third item
+
+You can create organized (numbered) lists by just typing numbers:
+1. Step one is to write code
+2. Step two is to deploy
+3. Step three is profit
+
+## Blockquotes
+If you want to quote someone or highlight a specific thought, use the greater-than `>` symbol.
+
+> "Premature optimization is the root of all evil. Build the feature first, make it fast later." - Donald Knuth
+
+## Code Blocks
+To write a block of code that users can copy, use three backticks followed by the language name (like `javascript`, `typescript`, `html`, or `css`).
+
+```javascript
+// This is a beautiful code block!
+function calculateGrowth(oldMetrics, newMetrics) {
+  const diff = newMetrics - oldMetrics;
+  const percentage = (diff / oldMetrics) * 100;
+  
+  return {
+    status: percentage > 0 ? 'growth' : 'decline',
+    value: percentage.toFixed(2) + '%'
+  };
+}
+```
+
+## Tables
+Markdown tables look a bit strange when you are typing them, but they render beautifully. You use pipes `|` to separate columns, and dashes `-` to separate the header from the body.
+
+| Metric | Before | After | Change |
+| ------ | ------ | ----- | ------ |
+| First Contentful Paint | 1.2s | 0.8s | +33% |
+| Time to Interactive | 3.4s | 1.5s | +55% |
+| Bundle Size | 245kb | 112kb | +54% |
+
+## Custom React Components (The Magic of MDX)
+Because this is MDX (Markdown + JSX), you are not limited to just text. If you build a custom React component (like a Chart or a Button), you can literally just type it straight into this file!
+
+*(Note: To use a custom component like `<MyCustomChart />`, you just have to import it at the top of the MDX file first!)*
