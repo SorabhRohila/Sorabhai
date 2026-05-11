@@ -12,6 +12,7 @@ import SeoGuidePost from "./pages/SeoGuidePost";
 // 1. ADD YOUR TEMPLATE IMPORT BACK
 import BlogPostTemplate from "./pages/BlogPostTemplate"; 
 import StartupIdeasPost from "./pages/StartupIdeasPost";
+import AiWebsitesPost from "./pages/AiWebsitesPost";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -27,6 +28,7 @@ const App = () => (
             {/* 2. ADD YOUR TEMPLATE ROUTE BACK */}
             <Route path="/blog/template" element={<BlogPostTemplate />} />
             <Route path="/blog/startup-ideas" element={<StartupIdeasPost />} />
+            <Route path="/blog/ai-websites" element={<AiWebsitesPost />} />
             
             <Route path="*" element={<NotFound />} />
           </Routes>
