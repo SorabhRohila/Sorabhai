@@ -13,6 +13,7 @@ import SeoGuidePost from "./pages/SeoGuidePost";
 import BlogPostTemplate from "./pages/BlogPostTemplate"; 
 import StartupIdeasPost from "./pages/StartupIdeasPost";
 import AiWebsitesPost from "./pages/AiWebsitesPost";
+import DentistWebsitesPost from "./pages/DentistWebsitesPost";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/blog/template" element={<BlogPostTemplate />} />
             <Route path="/blog/startup-ideas" element={<StartupIdeasPost />} />
             <Route path="/blog/ai-websites" element={<AiWebsitesPost />} />
+            <Route path="/blog/dentist-websites" element={<DentistWebsitesPost />} />
             
             <Route path="*" element={<NotFound />} />
           </Routes>
