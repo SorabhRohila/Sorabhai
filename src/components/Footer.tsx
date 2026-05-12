@@ -44,7 +44,7 @@ export const Footer = () => {
         </div>
 
         <div className="mt-16 pt-6 border-t border-border flex flex-col md:flex-row justify-between gap-3 font-mono text-[11px] text-muted-foreground uppercase tracking-[0.12em]">
-          <span>© {year} SchemaAI. All rights reserved.</span>
+          <span>© {year} Unvault. All rights reserved.</span>
           <span>Crafted with precision · Made for the web</span>
         </div>
       </div>

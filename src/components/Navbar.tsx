@@ -19,7 +19,7 @@ export const Navbar = () => {
           <Link to="/" onClick={closeMenu} className="flex items-center gap-2.5">
             <div className="w-2.5 h-2.5 bg-accent" />
             <span className="font-mono text-sm font-medium tracking-tight hover:text-muted-foreground transition-colors">
-              saurabh.dev
+              unvault
             </span>
           </Link>
 
