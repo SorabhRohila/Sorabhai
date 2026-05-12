@@ -27,25 +27,38 @@ const tools = [
   }
 ];
 
-// Mock data for your blog 
+// Your actual 4 latest blog posts!
 const recentPosts = [
   {
-    title: "How I built a micro-SaaS with React & Supabase",
-    date: "May 1, 2026",
-    excerpt: "A deep dive into my architecture choices and how to scale side projects quickly.",
-    slug: "/blog/building-micro-saas",
+    title: "How to Make ₹15K–₹25K by Creating Websites for Dentists",
+    date: "May 11, 2026",
+    excerpt: "Dentists are high-ticket clients. Here is the exact blueprint to build them premium websites in 30 minutes using AI and charge ₹25,000.",
+    slug: "/blog/dentist-websites",
   },
   {
-    title: "Mastering Programmatic SEO for Developer Tools",
-    date: "April 24, 2026",
-    excerpt: "Learn how to capture niche search intent using dynamic pages and AI generation.",
-    slug: "/blog/programmatic-seo",
+    title: "How to Make ₹15K–₹20K by Creating AI Websites",
+    date: "May 11, 2026",
+    excerpt: "You don't need to be an expert coder. Learn the beginner-friendly side hustle to leverage AI tools and start closing local business clients.",
+    slug: "/blog/ai-websites",
+  },
+  {
+    title: "3 Websites to Find Proven US Startup Ideas You Can Start in India",
+    date: "May 11, 2026",
+    excerpt: "Smart founders copy what already works. Discover how to find proven US startup ideas and adapt them for the fast-growing Indian market.",
+    slug: "/blog/startup-ideas",
+  },
+  {
+    title: "The Ultimate SEO Guide for Developers",
+    date: "May 02, 2026",
+    excerpt: "Getting your React site to rank on Google is easier than you think. You don't need Next.js to get started.",
+    slug: "/blog/seo-guide",
   }
 ];
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Saurabh | Developer, Maker & Content Creator";
+    // Updated to your new brand name!
+    document.title = "Unvault | Developer, Maker & Content Creator";
   }, []);
 
   return (
@@ -92,19 +105,19 @@ const Index = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {recentPosts.map((post, index) => (
-              <article key={index} className="group p-6 sm:p-8 border border-border bg-surface hover:border-foreground/20 transition-colors">
+              <article key={index} className="group p-6 sm:p-8 border border-border bg-surface hover:border-foreground/20 transition-colors flex flex-col h-full">
                 <div className="font-mono text-[10px] sm:text-[11px] text-muted-foreground uppercase tracking-[0.12em] mb-3 sm:mb-4">
                   {post.date}
                 </div>
-                <Link to={post.slug}>
+                <Link to={post.slug} className="flex-1">
                   <h3 className="text-xl sm:text-2xl font-medium tracking-[-0.025em] mb-2 sm:mb-3 group-hover:underline decoration-1 underline-offset-4">
                     {post.title}
                   </h3>
+                  <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed mb-5 sm:mb-6">
+                    {post.excerpt}
+                  </p>
                 </Link>
-                <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed mb-5 sm:mb-6">
-                  {post.excerpt}
-                </p>
-                <Link to={post.slug} className="text-[10px] sm:text-xs uppercase tracking-wider font-mono hover:text-muted-foreground transition-colors">
+                <Link to={post.slug} className="text-[10px] sm:text-xs uppercase tracking-wider font-mono hover:text-muted-foreground transition-colors mt-auto inline-block">
                   Read more →
                 </Link>
               </article>
